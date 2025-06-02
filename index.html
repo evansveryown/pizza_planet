@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="output.css">
+    <title>Pizza Planet</title>
+    <link href="output.css" rel="stylesheet">
 </head>
-<body>
+<body class="font-sans text-gray-900">
+
     <nav class="bg-gray-600 text-white flex justify-between h-[50px] items-center"> 
         <p class="ml-8"><span class="text-[#EA384C]">Pizza</span> <span class="text-[#FEF7CD]">Planet</span></p>
         <div>
@@ -16,10 +17,150 @@
             <a href="#contact" class="mx-4">Contact</a>
         </div>
     </nav>
-    <section class="image h-screen">
-        <h1 class="text-red-900">Pizza Planet</h1>
-        <p class="text-white">Out of this world Pizza delivered at your doorstep</p>
-        <button class="btn bg-[#EA384C]">View our menu</button> <button class="btn bg-[#F97316]">Order now</button>
+
+    <!-- Hero Section -->
+    <section class="image bg-gradient-to-r from-yellow-100 to-red-100 py-20 px-4 md:px-16 text-center">
+        <h1 class="text-5xl md:text-6xl font-bold mb-4"><span class="text-[#EA384C]">Pizza</span> <span class="text-[#FEF7CD]">Planet</span></h1>
+        <p class="text-lg md:text-xl text-[#FEF7CD] mb-6">Out-of-this-world flavors delivered to your doorstep</p>
+        <a href="#menu" class="bg-[#EA384C] hover:bg-[#b02838] text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300">View Our Menu</a> <a href="#menu" class="bg-[#F97316] hover:bg-[#ea580c] text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300">Order Now</a>
     </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="bg-[#FEF7CD] py-16 px-6 md:px-16">
+    <h2 class="text-center text-3xl font-bold text-[#EA384C] mb-8">About Us</h2>
+    <div class="md:flex items-center gap-8">
+        <img src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pizza" class="w-full md:w-1/2 rounded shadow-md">
+        <div class="mt-6 md:mt-0 md:w-1/2 text-gray-800">
+            <h3 class="text-[#EA384C] text-xl font-bold mb-2">Our Story</h3>
+            <p class="mb-4">Pizza Planet was founded in 2010 by two best friends who shared a passion for great pizza and space! Our mission is to serve the most delicious pizza in the galaxy while providing a fun experience for the whole family.</p>
+            <p class="mb-4">All our ingredients are fresh and locally sourced. Our dough is made in-house daily, and our sauce is a secret family recipe passed down through generations.</p>
+            <p>Whether you're dining in our space-themed restaurant or ordering for delivery, we promise an out-of-this-world pizza experience that will have you coming back for more!</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Our Menu Section -->
+    <section id="menu" class="py-16 px-4 md:px-16 bg-white">
+        <h2 class="text-4xl font-bold text-center text-[#EA384C] mb-12">Our Menu</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+            <!-- 1. Cosmic Margherita -->
+            <div class="shadow rounded overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1598023696416-0193a0bcd302?q=80&w=2136&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cosmic Margherita" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-[#EA384C] font-semibold">Cosmic Margherita <span class="float-right text-xs bg-yellow-100 px-2 py-1 rounded">KES 1450</span></h3>
+                    <p class="text-sm text-gray-600">Classic tomato sauce, fresh mozzarella, basil, olive oil</p>
+                    <button class="bg-[#F97316] text-white mt-2 px-4 py-2 w-full rounded">Add to Order</button>
+                </div>
+            </div>
+
+            <!-- 2. Pepperoni Meteor -->
+            <div class="shadow rounded overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1598023696416-0193a0bcd302?q=80&w=2136&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pepperoni Meteor" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-[#EA384C] font-semibold">Pepperoni Meteor <span class="float-right text-xs bg-yellow-100 px-2 py-1 rounded">KES 1650</span></h3>
+                    <p class="text-sm text-gray-600">Zesty pepperoni, mozzarella, red sauce, and a sprinkle of chili flakes</p>
+                    <button class="bg-[#F97316] text-white mt-2 px-4 py-2 w-full rounded">Add to Order</button>
+                </div>
+            </div>
+
+            <!-- 3. Veggie Spacecraft -->
+            <div class="shadow rounded overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1598023696416-0193a0bcd302?q=80&w=2136&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Veggie Spacecraft" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-[#EA384C] font-semibold">Veggie Spacecraft <span class="float-right text-xs bg-yellow-100 px-2 py-1 rounded">KES 1550</span></h3>
+                    <p class="text-sm text-gray-600">Bell peppers, olives, mushrooms, onions & mozzarella</p>
+                    <button class="bg-[#F97316] text-white mt-2 px-4 py-2 w-full rounded">Add to Order</button>
+                </div>
+            </div>
+
+            <!-- 4. BBQ Chicken Rocket -->
+            <div class="shadow rounded overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1598023696416-0193a0bcd302?q=80&w=2136&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="BBQ Chicken Rocket" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-[#EA384C] font-semibold">BBQ Chicken Rocket <span class="float-right text-xs bg-yellow-100 px-2 py-1 rounded">KES 1700</span></h3>
+                    <p class="text-sm text-gray-600">Smoky BBQ sauce, grilled chicken, onions, mozzarella</p>
+                    <button class="bg-[#F97316] text-white mt-2 px-4 py-2 w-full rounded">Add to Order</button>
+                </div>
+            </div>
+
+            <!-- 5. Alien Cheese Burst -->
+            <div class="shadow rounded overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1598023696416-0193a0bcd302?q=80&w=2136&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Alien Cheese Burst" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-[#EA384C] font-semibold">Alien Cheese Burst <span class="float-right text-xs bg-yellow-100 px-2 py-1 rounded">KES 1800</span></h3>
+                    <p class="text-sm text-gray-600">Loaded with four types of cheese – mozzarella, cheddar, gouda & parmesan</p>
+                    <button class="bg-[#F97316] text-white mt-2 px-4 py-2 w-full rounded">Add to Order</button>
+                </div>
+            </div>
+
+            <!-- 6. Martian Meat Lover -->
+            <div class="shadow rounded overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1598023696416-0193a0bcd302?q=80&w=2136&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Martian Meat Lover" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-[#EA384C] font-semibold">Martian Meat Lover <span class="float-right text-xs bg-yellow-100 px-2 py-1 rounded">KES 1900</span></h3>
+                    <p class="text-sm text-gray-600">Beef, sausage, ham, bacon, and mozzarella on a thick crust</p>
+                    <button class="bg-[#F97316] text-white mt-2 px-4 py-2 w-full rounded">Add to Order</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact us -->
+    <section id="contact" class="bg-black text-white py-16 px-6 md:px-16 text-center">
+    <h2 class="text-3xl font-bold text-[#EA384C] mb-8">Contact Us</h2>
+    <form class="bg-white p-8 rounded max-w-xl mx-auto space-y-4 text-left">
+        <div>
+            <label class="block mb-1">Name</label>
+            <input type="text" class="w-full px-4 py-2 rounded text-black border border-gray-400" placeholder="Your name">
+        </div>
+        <div>
+            <label class="block mb-1">Email</label>
+            <input type="email" class="w-full px-4 py-2 rounded text-black border border-gray-400" placeholder="your@email.com">
+        </div>
+        <div>
+            <label class="block mb-1">Message</label>
+            <textarea class="w-full px-4 py-2 rounded text-black border border-gray-400" rows="4" placeholder="What would you like to tell us?"></textarea>
+        </div>
+        <button class="bg-[#EA384C] px-6 py-2 rounded w-full">Send Message</button>
+
+        <div class="mt-12 text-left max-w-xl mx-auto text-sm">
+        <h3 class="text-[#EA384C] text-lg font-bold mb-2">Visit Us</h3>
+        <p class="text-black"><strong class="text-black">Address:</strong> Galactic Plaza, Westlands Road, Nairobi, Kenya</p>
+        <p class="text-black"><strong class="text-black">Phone:</strong> +254 712 345 678</p>
+        <p class="text-black"><strong class="text-black">Hours:</strong> Mon-Sun: 11am – 10pm</p>
+    </div>
+
+    </form>
+
+</section>
+
+<footer class="bg-gray-600 text-white px-6 md:px-16 py-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+    <div>
+        <p class="mt-2"><span class="text-[#EA384C] text-lg font-bold">Pizza</span> <span class="text-[#FEF7CD] text-lg font-bold">Planet</span></p>
+        <p class="mt-2">Serving out-of-this-world pizza since 2010. Made with fresh ingredients and love!</p>
+    </div>
+    <div>
+        <h4 class="text-[#FEF7CD] text-lg font-bold mb-2">Quick Links</h4>
+        <ul>
+            <li><a href="#home" class="hover:underline">Home</a></li>
+            <li><a href="#about" class="hover:underline">About Us</a></li>
+            <li><a href="#menu" class="hover:underline">Menu</a></li>
+            <li><a href="#contact" class="hover:underline">Contact</a></li>
+        </ul>
+    </div>
+    <div>
+        <h4 class="text-[#FEF7CD] text-lg font-bold mb-2">Connect With Us</h4>
+        <div class="flex space-x-3 mb-2">
+            <a href="#"><img src="https://www.svgrepo.com/show/506656/facebook.svg" class="h-5"></a>
+            <a href="#"><img src="https://www.svgrepo.com/show/506668/instagram.svg" class="h-5"></a>
+            <a href="#"><img src="https://www.svgrepo.com/show/506685/twitter.svg" class="h-5"></a>
+        </div>
+        <p>Subscribe to our newsletter to get updates on special offers!</p>
+    </div>
+</footer>
+
 </body>
 </html>
